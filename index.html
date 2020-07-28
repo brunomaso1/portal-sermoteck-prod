@@ -1,75 +1,428 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <title>Sermoteck</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Google Web Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <!--[if lt IE 9]>
-		<script src="js/ie8-responsive-file-warning.js"></script>
-	<![endif]-->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/fav-144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/fav-114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/fav-72.png">
-    <link rel="apple-touch-icon-precomposed" href="images/fav-57.png">
-    <link rel="shortcut icon" href="images/fav.png">
+    <meta content="Sermoteck, reparacion de celulares" name="description">
+    <meta content="sermoteck, reparación celualr, samsung, iphone, xiaomi, problemas técnicos" name="keywords">
+    <meta name="referrer" content="origin">
+    <meta name="author" content="Sermoteck">
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css"
+        integrity="sha512-uUsJnYcswxI6Vy2g88USOAD351ljY8pWr98HTXVSxQ4/uT43nzlGk91EAsvO5fOzw9QtBPFaw9tgZPSrxvM3RA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+        integrity="sha512-JApjWRnfonFeGBY7t4yq8SWr1A6xVYEJgO/UMIYONxaR3C9GETKUg0LharbJncEzJF5Nmiv+Pr5QNulr81LjGQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.css"
+        integrity="sha512-e+0yqAgUQFoRrJ4pZigQXpOE0S7J9IGwmgH801h4H5ODqOCG8/GRfXHQ+9ab754NL79O7wDwdjwY3CcU8sEANg=="
+        crossorigin="anonymous" />
+    <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Preloader Starts -->
-    <div class="loader">
-    </div>
-    <!-- Preloader Ends -->
-    <!-- Header Section Starts -->
-    <header id="header">
-        <div class="header-overlay">
-            <div class="container">
-                <!-- Logo Starts -->
-                <div data-scroll-reveal="enter top and move 50px over 1.2s" class="hexagon">
-                    <i class="fa fa-flash"></i><span></span>
-                </div>
-                <!-- Logo Ends -->
-                <!-- Main Heading Starts -->
-                <div class="main-head">
-                    <h2 data-scroll-reveal="enter left and move 50px over 1.8s">
-                        Página en construcción</h2>
-                    <p data-scroll-reveal="enter right and move 50px over 2.0s">
-                       Estamos constuyendo algo asombroso para ti. <br/> Vuelve más adelante!</p>
-                </div>
-                <!-- Main Heading Ends -->
+    <header id="header" class="fixed-top">
+        <div class="container">
+            <div class="logo float-left">
+                <a href="#intro" class="scrollto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
             </div>
-            <!-- Countdown Area Ends -->
+            <nav class="main-nav float-right d-none d-lg-block">
+                <ul>
+                    <li class="active"><a class="a-custom-1" href="#intro">Inicio</a></li>
+                    <li><a class="a-custom-1" href="#about">Sobre nosotros</a></li>
+                    <li><a class="a-custom-1" href="#characteristics">Servicios</a></li>
+                    <li><a class="a-custom-1" href="#contact">Contáctanos</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <!-- Header Section Ends -->
+    <section id="intro" class="clearfix">
+        <div class="container">
+            <div class="intro-img">
+                <img src="assets/img/icono-1340x416.png" alt="" class="img-fluid">
+                <h2>Soluciones en tecnologías móviles</h2>
+            </div>
+            <div class="intro-info">
+                <h2>¿Tienes algún problema <br> con tu celular?</h2>
+                <div>
+                    <a href="#contact" class="btn-get-started scrollto">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main id="main">
+        <section id="about">
+            <div class="container">
+                <header class="section-header">
+                    <h3>Sobre nosotros</h3>
+                    <p>Sermoteck es una empresa de tecnología enfocada en tecnologías móviles</p>
+                </header>
+                <div class="row about-container">
+                    <div class="col-lg-6 content order-lg-1 order-2">
+                        <p>
+                            Hoy en día los telefonos celulares están en la mano de todos los uruguayos, pero como buen
+                            uruguayo seguimos teniendo problemas. Es por eso que en Sermoteck te brindamos:
+                        </p>
+                        <div class="icon-box wow fadeInUp">
+                            <div class="icon"><i class="fa fa-mobile fa-5x"></i></div>
+                            <h4 class="title h4-custom-1">SERVICIO TÉCNICO DE HARDWARE</h4>
+                            <p class="description">Realizamos todo tipo de reparaciones de celulares</p>
+                        </div>
+                        <div class="icon-box wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
+                            <div class="icon"><i class="fa fa-list-alt fa-5x"></i></div>
+                            <h4 class="title h4-custom-1">SERVICIO TÉCNICO DE SOFTWARE</h4>
+                            <p class="description">Brindamos soluciones antes problemas de software</p>
+                        </div>
+                        <div class="icon-box wow fadeInUp" data-wow-delay="1.0s" data-wow-duration="0.5s">
+                            <div class="icon"><i class="fa fa-check-circle-o fa-5x"></i></div>
+                            <h4 class="title h4-custom-1">SOLUCIONES EN TODAS LAS MARCAS</h4>
+                            <p class="description">No nos basamos en ninguna marca en específico, solucionamos problemas
+                                de todas las marcas
+                            </p>
+                        </div>
+                        <div class="icon-box wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="0.5s">
+                            <div class="icon"><i class="fa fa-comments fa-5x"></i></div>
+                            <h4 class="title h4-custom-1">CONSULTORÍA TÉCNICA</h4>
+                            <p class="description">Somos expertos en brindar consultoría técnica relacionada con toda la
+                                gama de tecnologías móviles. Tienes alguna duda de que celular obtener? Tienes algún
+                                proyecto que implique tecnologías móviles? Consultanos!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp d-flex justify-content-center"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <img src="assets/img/pic02.png" class="img-fluid" alt="" style="height: 500px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="characteristics" class="section-bg">
+            <div class="container">
+                <header class="section-header">
+                    <h3 class="h3-custom-1">Servicios</h3>
+                </header>
+                <div class="row">
+                    <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+                        <div class="box">
+                            <div class="d-flex justify-content-center img-custom-1"><img src="assets/img/img-1.png"
+                                    class="img-fluid img-custom-2" alt=""></div>
+                            <div class="text-center">
+                                <h4 class="title"><a href="#contact">SERVICIO A DOMICILIO</a></h4>
+                                <p class="description">Tu pareja no te deja salir de casa con el cel? Tranqui, en
+                                    Sermoteck te mandamos un técnico para que te lo solucione en tu casa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+                        <div class="box">
+                            <div class="d-flex justify-content-center img-custom-1"><img src="assets/img/img-2.png"
+                                    class="img-fluid img-custom-2" alt=""></div>
+                            <div class="text-center">
+                                <h4 class="title"><a href="#contact">SOLUCIONES EN EL DÍA</a></h4>
+                                <p class="description">Para que no tengas que pasar ningún momento sin el whatsapp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s"
+                        data-wow-duration="1.4s">
+                        <div class="box">
+                            <div class="d-flex justify-content-center img-custom-1"><img src="assets/img/img-3.png"
+                                    class="img-fluid img-custom-2" alt=""></div>
+                            <div class="text-center">
+                                <h4 class="title"><a href="#contact">REPARACIÓN DE EMERGENCIA</a></h4>
+                                <p class="description">Descargaste Tinder, hiciste un match espectacular, y de la
+                                    emoción se te cae el cel y se te rompe la pantalla. No te preocupes, en Sermoteck te
+                                    realizamos una reparación de emergencia. Mientras esperas en nuestra sala,
+                                    disfruta de un partido de Fifa y un café para distenderte y no desanimarte hasta que
+                                    esté listo el cel
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                        <div class="box">
+                            <div class="d-flex justify-content-center img-custom-1"><img src="assets/img/img-4.png"
+                                    class="img-fluid img-custom-2" alt=""></div>
+                            <div class="text-center">
+                                <h4 class="title"><a href="#contact">CONSULTORÍA TÉCNICA</a></h4>
+                                <p class="description">Tienes alguna duda sobre que celular comprar? Te anda lento el
+                                    cel? Sospechas de un virus informático? Quieres charlar un poco sobre tecnologías
+                                    móviles? Escribenos!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s"
+                        data-wow-duration="1.4s">
+                        <div class="box">
+                            <div class="d-flex justify-content-center img-custom-1"><img src="assets/img/img-5.png"
+                                    class="img-fluid img-custom-2" alt=""></div>
+                            <div class="text-center">
+                                <h4 class="title"><a href="#contact">PANDEMIC EMERGENCY</a></h4>
+                                <p class="description">No querés ni salir a la esquina? En Sermoteck te vamos a buscar
+                                    el cel, lo reparamos en nuestro taller y luego te lo llevamos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="why-us" class="wow fadeIn">
+            <div class="container">
+                <header class="section-header">
+                    <h3>¿Por qué nosotros?</h3>
+                </header>
+                <div class="row row-eq-height justify-content-center">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="0.5s">
+                            <i class="fa fa-diamond"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">CONFIANZA</h5>
+                                <p class="card-text">En Sermoteck te damos confianza. Eso se demuestra ni bien llegas.
+                                    Si no tenemos stock de la pieza que te falta para reparar, dejos tu cel, que
+                                    importamos tu pieza para solucionarlo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">
+                            <i class="fa fa-language"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">SINCERIDAD</h5>
+                                <p class="card-text">Somos Uruguayos, sabemos la situación del día a día, y con
+                                    sinceridad te decimos si te conviene reparar el cel o no. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card wow bounceInUp" data-wow-delay="0.3" data-wow-duration="0.5s">
+                            <i class="fa fa-object-group"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">CONSULTORES EXPERTOS</h5>
+                                <p class="card-text">Tenemos un grupo de consultoría ampliamente capaz, comprometido y
+                                    certificado. Contá con nosotros!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row counters">
+                    <div class="col-lg-3 col-6 text-center">
+                        <span class="counter">31</span>
+                        <p>Clientes</p>
+                    </div>
+                    <div class="col-lg-3 col-6 text-center">
+                        <span class="counter">25</span>
+                        <p>Reparaciones</p>
+                    </div>
+                    <div class="col-lg-3 col-6 text-center">
+                        <span class="counter">540</span>
+                        <p>Horas de consultoría</p>
+                    </div>
+                    <div class="col-lg-3 col-6 text-center">
+                        <span class="counter">2</span>
+                        <p>Trabajadores</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer Ends -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/jquery.backstretch.min.js" type="text/javascript"></script>
-    <script src="js/scrollReveal.js" type="text/javascript"></script>
-    <script src="js/jquery.downCount.js" type="text/javascript"></script>
-    <script src="js/custom.js" type="text/javascript"></script>
+        <section id="contact">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h3>Contáctanos</h3>
+                </div>
+                <div class="row wow fadeInUp">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-md-6 justify-content-center text-center">
+                                <div class="map mb-4 d-flex ">
+                                    <iframe
+                                        src="https://maps.google.com/maps?q=Sevilla%20y%20avenida%20italia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" style="border:0; width: 100%; height: 312px;"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="info" style="display: inline-block">
+                                    <a href="https://maps.google.com/maps?q=Sevilla%20y%20avenida%20italia&t=&z=13&ie=UTF8&iwloc="
+                                        target="_blank"><i class="ion-ios-location-outline"></i></a>
+                                    <p>Buceo, Montevideo, Uruguay</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 justify-content-center text-center">
+                                <div class="map mb-4 d-flex ">
+                                    <iframe
+                                        src="https://maps.google.com/maps?q=Cuaro%20y%20bulevard%20artigas&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" style="border:0; width: 100%; height: 312px;"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="info" style="display: inline-block">
+                                    <a href="https://maps.google.com/maps?q=Cuaro%20y%20bulevard%20artigas&t=&z=13&ie=UTF8&iwloc="
+                                        target="_blank"><i class="ion-ios-location-outline"></i></a>
+                                    <p>Bella Vista, Montevideo, Uruguay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-md-7 info">
+                                <a href="mailto:sermoteck@gmail.com">
+                                    <i class="ion-ios-email-outline"></i>
+                                </a>
+                                <p>sermoteck@gmail.com</p>
+                            </div>
+                            <div class="col-md-5 info">
+                                <a href="tel:+59892359072"><i class="ion-ios-telephone-outline"></i></a>
+                                <p>092 359 072</p>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <form action="https://formspree.io/mdowykba" method="post" role="form" target="_blank"
+                                class="php-email-form">
+                                <div class="form-row">
+                                    <div class="form-group col-lg-12">
+                                        <input type="text" name="name" class="form-control" id="name"
+                                            placeholder="Nombre" data-rule="minlen:4"
+                                            data-msg="Por favor, ingresa al menos 4 caracteres" required />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                        <input type="email" class="form-control" name="_replyto" placeholder="Email"
+                                            data-rule="email" data-msg="Ingresa un email válido" required />
+                                        <div class="validate"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required"
+                                        data-msg="Escribenos tu consulta" placeholder="Mensaje" required></textarea>
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" value="Send" title="Send Message" data-toggle="modal"
+                                        data-target="#emailModal">Enviar mensaje</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <h3>Sermoteck</h3>
+                        <p>Sermoteck es una empresa de tecnología enfocada en la reparación de celulares.</p>
+                    </div>
+                    <div class="col-lg-8 col-md-6 footer-contact">
+                        <h4>Contáctanos</h4>
+                        <p>
+                            <br> Uruguay <br>
+                            <strong>Cel:</strong> 092 359 072<br>
+                            <strong>Email:</strong> sermoteck@gmail.com<br>
+                        </p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/sermoteck" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/Sermoteck-102280901462076" class="facebook"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/sermoteck/" class="instagram"><i
+                                    class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Mensaje enviado</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Su mensaje ha sido enviado exitosamente. <br /> Pronto nos estaremos comunicando. <br /> Gracias.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
 
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
+    <div class="fb-customerchat" attribution=setup_tool page_id="102280901462076" theme_color="#B41400"
+        logged_in_greeting="¡Hola! ¿En qué podemos ayudarte?" logged_out_greeting="¡Hola! ¿En qué podemos ayudarte?"
+        greeting_dialog_display=hide>
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=+59892359072&text=Buenas%2C%20tengo%20una%20consulta%20sobre%20un%20celular."
+        class="float-icon" target="_blank"><i class="fa fa-whatsapp"></i></a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+        integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+        integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.0/venobox.min.js"
+        integrity="sha512-hr9TR9RqJLzyYAkyJH6C9Nalz5kVDzXiNt14tANyuLuSC+7wyxEK94EfqWPBrY7eAlNEkTBowANuFQwKVjTEEw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous"></script>
+
+    <script src="assets/thirdparty/mobile-nav/mobile-nav.js"></script>
+    <script src="assets/thirdparty/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
